@@ -187,10 +187,10 @@ const Expenses = () => {
               </button>
 
               <button
-                className={`tab-button ${activeTab === 'Categories' ? 'active' : ''}`}
-                onClick={() => handleTabClick('Categories')}
+                className={`tab-button ${activeTab === 'Subscriptions' ? 'active' : ''}`}
+                onClick={() => handleTabClick('Subscriptions')}
               >
-                Categories
+                Subscriptions
               </button>
               <button
                 className={`tab-button ${activeTab === 'budgetPlan' ? 'active' : ''}`}
@@ -276,15 +276,7 @@ const Expenses = () => {
           {activeTab === 'graphs' && <Graphs />}
 
           {/* Categories Tab Content */}
-          {activeTab === 'Categories' && (
-            <div id="categories" className="tab-content">
-              <div className="categories-list">
-                <h2>Hello!</h2>
-                {/* Categories content will go here */}
-                <p>Categories will be populated here!</p>
-              </div>
-            </div>
-          )}
+          {activeTab === 'Subscriptions' && }
 
           {/*  */}
           {activeTab === 'budgetPlan' && (
